@@ -9,28 +9,47 @@ body{
     display: grid;
     //grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
+    //border: 10px solid coral;
     //grid-auto-rows: 400px;
+    @media all and (max-width: 768px)
+    {
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 300px));
+        
+    }
 }
 .hero{
     background-color: $--yellow-color;
     grid-column: 1/span 2;
-    grid-row: 1/span 2;
-    background-image: url('../images/home-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
     
 }
 
 .welcome{
     background-color: $--cream-color;
     grid-column: 3/span 2;
-    grid-row: 1/span 2; 
     display: grid;
     justify-content: center;
+    
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        text-align: center;
+        
+    }
+
 }
 .nav-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    @media all and (max-width: 768px)
+    {
+        display: none;
+        
+    }
 }
 .welcome-section{
     padding: 4rem 1.5rem;
@@ -38,21 +57,32 @@ body{
 .primary-section{
     background-color: white;
     grid-column: 1/span 2;
-    grid-row-end: 4;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .skill-img {
-    background-image: url('../images/about-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     grid-column-end: 4;
-    grid-row-end: 4;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .skills-section{
     background-color: $--yellow-color;
     grid-column-end: 5;
-    grid-row-end: 4;
     padding: 1rem;
+        -self: center;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+        
+    }
 }
 .percent90 {
     background-image: linear-gradient(to right,$--black-color 90%, white 10% );
@@ -73,54 +103,75 @@ body{
     grid-column: 1/-1;
 }
 .skill-spec{
-    width: 80%;
+    width: 100%;
     
 }
 .interface-section{
     display: grid;
     background-color: $--yellow-color;
     grid-column-end: 2;
-    grid-row-end: 5;
     justify-items: center;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .media-section{
     background-color: $--orange-color;
     grid-column-end: 3;
-    grid-row-end: 5;
     display: grid;
     justify-items: center;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .mobile-section{
     background-color: $--black-color;
     grid-column-end: 4;
     color: white;
-    grid-row-end: 5;
     display: grid;
     justify-items: center;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .coding-section{
     background-color: white;
     grid-column-end: 5;
-    grid-row-end: 5;
     display: grid;
     justify-items: center;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .exp-img{
-    background-image: url('../images/experience-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     grid-column: 1/span 2;
-    grid-row: 5/7;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .exp-section{
     background-color: $--orange-color;
     grid-column: 3/span 2;
-    grid-row: 5/7;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .exp-item{
     div{
@@ -145,52 +196,80 @@ body{
 .edu-section{
     background-color: $--yellow-color;
     grid-column: 1/span 2;
-    grid-row: 7/9;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
     
 }
 .edu-img{
-    background-image: url('../images/education-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     grid-column: 3/span 2;
-    grid-row: 7/9;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 
 .contact-section{
     background-color: $--orange-color;
     grid-column: 1/span 2;
-    grid-row: 9/span 2;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 
 }
 
 .contact-img{
-    background-image: url('../images/contact-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column-end: 3/4;
-    grid-row: 9/span 2;
+    grid-column: 3/span 1;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .contact-details{
     background-color: $--black-color;
     grid-column: 4/5;
-    grid-row: 9/span 2;
     padding: 1rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 contact-details-cnt > div {
     margin: 1rem 0;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .location-section {
     background-color: $--orange-color;
     grid-column: 1/-1;
-    grid-row-end: 12;
     padding: 1rem 3rem;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+        
+    }
 }
 .footer{
     padding: 5rem 0;
     text-align: center;
     grid-column: 1/-1;
-    grid-row-end: 13;
     background-color: white;
+    @media all and (max-width: 768px)
+    {
+        grid-column: 1/span 1;
+
+    }
 }
