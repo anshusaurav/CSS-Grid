@@ -1,0 +1,237 @@
+@import"vars";
+html{
+    font-size: 16px;
+    font-family: $font-family;
+}
+
+a{
+    text-decoration: none;
+    font-family: $font-family;
+    .welcome & {
+        text-transform: uppercase;
+        place-self: center;
+        color: plum;
+    }
+    .contact-details-cnt &{
+        color: white;
+        padding-right: 2em;
+    }
+}
+
+
+h1{
+    .hero & {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-shadow: 1px 1px cornsilk;
+        padding: 2rem 0 0 2rem;
+    }
+}
+
+h2{
+    .welcome-section & {
+        font-size: 2.5rem;
+    }
+    .primary-section &{
+        font-size: 2rem;
+        color: black;
+    }
+    .skills-section &{
+        font-size: 2rem;
+        color: wheat;
+    }
+    .interface-section &{
+        font-size: 1.25rem;
+        color: wheat;
+        padding: 1rem 0;
+    }
+    .media-section &{
+        font-size: 1.25rem;
+        color: wheat;
+        padding: 1rem 0;
+    }
+    .mobile-section &{
+        font-size: 1.25rem;
+        color: wheat;
+        padding: 1rem 0;
+    }
+    .coding-section &{
+        font-size: 1.25rem;
+        color: black;
+        padding: 1rem 0;
+    }
+    .exp-section & {
+        font-size: 2rem;
+        color: wheat;
+    }
+    .edu-section & {
+        font-size: 2rem;
+        color: wheat;
+    }
+    .contact-section &{
+        font-size: 2rem;
+        color: wheat;
+    }
+    .contact-details &{
+        font-size: 1.25rem;
+        color: wheat;
+        padding: 1rem 0;
+    }
+}
+h3{
+    .exp-item &{
+        font-size: 1.5rem;
+        color: wheat;
+    }
+}
+h4 {
+    .exp-item &{
+        font-size: 1.1rem;
+        color: black;
+        place-self: end;
+    }
+}
+strong {
+    .welcome-section & {
+        font-weight: 600;
+    }
+}
+span {
+    .skill-spec & {
+        color: white;
+        font-size: 0.85rem;
+    }
+    small & {
+        color: $--orange-color;
+    }
+}
+p{
+    font-size: 1rem;
+    .welcome-section & {
+        color: #7E7773;
+    }
+    .primary-section & {
+        color: #CBCBCB;
+    }
+    .skills-section & {
+        color: wheat;
+    }
+    .skill-spec & {
+        color: black;
+        font-size: 0.85rem;
+    }
+    .interface-section &{
+        font-size: 1rem;
+        color: wheat;
+        text-align: center;
+    }
+    .media-section &{
+        font-size: 1rem;
+        color: wheat;
+        text-align: center;
+    }
+    .mobile-section &{
+        font-size: 1rem;
+        color: wheat;
+        text-align: center;
+    }
+    .coding-section &{
+        font-size: 1rem;
+        color: black;
+        text-align: center;
+    }
+    .exp-section &{
+        font-size: 0.8rem;
+        color: black;
+    }
+    
+    .edu-section &{
+        font-size: 0.8rem;
+        color: black;
+    }
+    .exp-item &{
+        font-size: 0.8rem;
+        color: wheat;
+    }
+    .contact-section &{
+        font-size: 1rem;
+        color: wheat;
+    }
+}
+button{
+    padding: 1em 3em;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 30px;
+    .welcome-section & {
+        margin: 2em 0;
+    }
+    .contact-section & {
+        background-color: white;
+        border: none;
+        margin: 2em 0;
+    }
+    
+}
+.all-caps{
+    
+    text-transform: uppercase;
+   
+}
+.first-caps {
+    text-transform: capitalize;
+    
+}
+p.yellow-text {
+    color: $--yellow-color;
+}
+.fas, .fab, .far{
+    color: white;
+    .coding-section & {
+        color: black;
+    }
+    .coding-section &, .media-section &,.mobile-section &, .interface-section & {
+        font-size: 2rem;
+    }
+    .exp-section & {
+        font-size: 2.5rem;
+    }
+    .edu-section & {
+        font-size: 2.5rem;
+    }
+    .contact-details-cnt &{
+        color: white;
+    }
+    .footer & {
+        color: #ccc;
+
+    }
+}
+input{
+    font-family: $font-family;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $--yellow-color;
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+textarea{
+    font-family: $font-family;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $--yellow-color;
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+small{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #ccc;
+}
